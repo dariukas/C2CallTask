@@ -21,7 +21,7 @@
     // CallAPI1@gmail.com / Password : 123456
     // CallAPI2@gmail.com / Password : 123456
     
-    self.affiliateid = @"7BC2803715BB31A91E3";
+    self.affiliateid = @"7BC2803715BB31A91E2";
     self.secret = @"6f7fd68701aa6365247cca4b4cd2854e";
 #ifdef __DEBUG
     self.useSandboxMode = YES;

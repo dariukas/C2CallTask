@@ -387,6 +387,7 @@
 				A3F85C571EC9C37B00098486 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
