@@ -1,0 +1,1 @@
+../../../../C2Call-SDK/Pod/Classes/SCAffiliateInfo.h

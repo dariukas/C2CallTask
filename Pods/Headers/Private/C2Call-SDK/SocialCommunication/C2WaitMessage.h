@@ -1,0 +1,1 @@
+../../../../C2Call-SDK/Pod/Classes/C2WaitMessage.h

@@ -1,0 +1,14 @@
+CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES
+CONFIGURATION_BUILD_DIR = $PODS_CONFIGURATION_BUILD_DIR/C2Call-SDK
+GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
+HEADER_SEARCH_PATHS = "${PODS_ROOT}/Headers/Private" "${PODS_ROOT}/Headers/Private/C2Call-SDK" "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/AWSCore" "${PODS_ROOT}/Headers/Public/AWSS3" "${PODS_ROOT}/Headers/Public/C2Call-SDK" "${PODS_ROOT}/Headers/Public/Flurry-iOS-SDK" "${PODS_ROOT}/Headers/Public/SBJson" /usr/include/libxml2
+LIBRARY_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/C2Call-SDK/Libraries" "$PODS_CONFIGURATION_BUILD_DIR/AWSCore" "$PODS_CONFIGURATION_BUILD_DIR/AWSS3" "$PODS_CONFIGURATION_BUILD_DIR/Flurry-iOS-SDK" "$PODS_CONFIGURATION_BUILD_DIR/SBJson"
+OTHER_LDFLAGS = -ObjC -l"c2callcore" -l"c2callsdk" -l"c2callvoip" -l"opus" -l"sqlite3" -l"stdc++" -l"vpx" -l"xml2" -l"z" -framework "AVFoundation" -framework "Accounts" -framework "AdSupport" -framework "AddressBook" -framework "AddressBookUI" -framework "AssetsLibrary" -framework "AudioToolbox" -framework "CFNetwork" -framework "CoreAudio" -framework "CoreData" -framework "CoreFoundation" -framework "CoreLocation" -framework "CoreTelePhony" -framework "CoreVideo" -framework "MapKit" -framework "MediaPlayer" -framework "MessageUI" -framework "MobileCoreServices" -framework "OpenGLES" -framework "QuartzCore" -framework "QuickLook" -framework "Security" -framework "StoreKit" -framework "SystemConfiguration" -framework "UIKit" -framework "iAd"
+OTHER_LDFLAGS[arch=i386] = -read_only_relocs suppress $(OTHER_LDFLAGS)
+OTHER_LDFLAGS[arch=x86_64] = -read_only_relocs suppress $(OTHER_LDFLAGS)
+PODS_BUILD_DIR = $BUILD_DIR
+PODS_CONFIGURATION_BUILD_DIR = $PODS_BUILD_DIR/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)
+PODS_ROOT = ${SRCROOT}
+PODS_TARGET_SRCROOT = ${PODS_ROOT}/C2Call-SDK
+PRODUCT_BUNDLE_IDENTIFIER = org.cocoapods.${PRODUCT_NAME:rfc1034identifier}
+SKIP_INSTALL = YES

@@ -2,7 +2,7 @@
 //  AppDelegate.m
 //  C2CallTask
 //
-//  Created by Kristina Šlekytė on 15/05/2017.
+//  Created by Darius Miliauskas on 15/05/2017.
 //  Copyright © 2017 Darius Miliauskas. All rights reserved.
 //
 
@@ -13,11 +13,21 @@
 @end
 
 @implementation AppDelegate
-
-
+    
+    
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
-    return YES;
+    
+    // Test Accounts:
+    // CallAPI1@gmail.com / Password : 123456
+    // CallAPI2@gmail.com / Password : 123456
+    
+    self.affiliateid = @"7BC2803715BB31A91E3";
+    self.secret = @"6f7fd68701aa6365247cca4b4cd2854e";
+#ifdef __DEBUG
+    self.useSandboxMode = YES;
+#endif
+    return [super application:application didFinishLaunchingWithOptions:launchOptions];
+    //return YES;
 }
 
 
